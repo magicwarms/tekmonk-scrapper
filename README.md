@@ -27,8 +27,6 @@
 
 ## Routes List
 
-These are example of the responses:
-
 1. getTimeStories
     ```sh
     http://localhost:9000/getTimeStories
