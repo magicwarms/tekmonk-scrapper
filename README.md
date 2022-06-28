@@ -29,9 +29,9 @@
 
 These are example of the responses:
 
-1. Index
+1. getTimeStories
     ```sh
-    http://localhost:8000/
+    http://localhost:9000/getTimeStories
     ```
 
 ## Example response
