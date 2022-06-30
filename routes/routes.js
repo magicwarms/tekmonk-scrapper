@@ -11,7 +11,7 @@ const getTimeStories = async () => {
                 response.on('end', () => {
                     const getLines = data.toString('utf8').split('\n');
                     const arrayOfStories = getLines
-                        .filter((line) => line.includes('latest-stories__item') || line.includes('a href='))
+                        .filter((line) => line.match(/latest-stories__item/g) || line.match(/a href=/g))
                         .slice(40, 64);
 
                     const getNecessaryLines = [];
