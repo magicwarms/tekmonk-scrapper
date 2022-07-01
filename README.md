@@ -14,10 +14,10 @@
 ## How to run
 
 1. Make sure you have nodeJS installed on your machine.
-2. pull this repository
+2. clone this repository
 3. Run this command to run the project:
     ```sh
-    npm run start
+    node server.js
     ```
 4. then run this endpoint:
     ```sh
