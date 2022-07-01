@@ -64,7 +64,6 @@ http.createServer(async (req, res) => {
                 // end the response and return it
                 return res.end(
                     JSON.stringify({
-                        success: true,
                         data: getData,
                         error: null,
                     })
@@ -76,7 +75,6 @@ http.createServer(async (req, res) => {
                     // send the error
                     return res.end(
                         JSON.stringify({
-                            success: false,
                             data: null,
                             errors: err.message,
                         })
@@ -86,7 +84,6 @@ http.createServer(async (req, res) => {
                 // send the error
                 return res.end(
                     JSON.stringify({
-                        success: false,
                         data: null,
                         errors: err.message,
                     })
@@ -98,7 +95,6 @@ http.createServer(async (req, res) => {
         // end the response and return it
         return res.end(
             JSON.stringify({
-                success: false,
                 data: { message: 'API Route not found' },
                 error: null,
             })
